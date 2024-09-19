@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Program Data</title>
+    <link rel="stylesheet" href="tugas2.css">
+</head>
+<body>
+    <video autoplay loop muted id="video-background">
+        <source src="image/3880037-hd_1920_1080_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    <div class="container">
+        <div class="form-container">
+            <h1>Student Form</h1>
+            <form id="registrationForm">
+                <label for="nama">Name: </label>
+                <input type="text" id="nama" name="nama" required><br>
+
+                <label for="nim">NIM: </label>
+                <input type="text" id="nim" name="nim" required><br>
+
+                <label for="kelas">Class: </label>
+                <input type="text" id="kelas" name="kelas" required><br>
+
+                <label for="prodi">Major: </label>
+                <input type="text" id="prodi" name="prodi" required><br>
+
+                <label for="alamat">Adress: </label>
+                <input type="text" id="alamat" name="alamat" required><br>
+
+                <button type="submit">Submit</button> <br>
+            </form>
+
+            <div id="displayData">
+                <h2>Result</h2>
+                <table id="dataTable">
+                    <tr>
+                        <th>Name</th>
+                        <th>NIM</th>
+                        <th>Class</th>
+                        <th>Major</th>
+                    </tr>
+                    <!-- Data will be appended here -->
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="tugas2.js"></script>
+</body>
+</html>
